@@ -4,4 +4,7 @@ from solving_algorithm import *
 board = Board()
 solver = Solver(board.example_board)
 
-print(solver.is_num_in_subgrid(4, 8, 3))
+board.print_board()
+solver.solve()
+print('..')
+board.print_board(solver.board)

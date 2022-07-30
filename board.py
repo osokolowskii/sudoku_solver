@@ -11,3 +11,15 @@ class Board:
         [0, 8, 2, 4, 5, 0, 3, 0, 7],
         [9, 5, 0, 0, 0, 0, 0, 8, 0]
     ]
+
+    def print_board(self, board = example_board):
+        for i in range(9):
+            if i in (3, 6):
+                print("- - - - - - - - - - - - -")
+            row = []
+            for j in range(9):
+                if j in (3, 6):
+                    row.append(" | ")
+                row.append(str(board[i][j]))
+            toprint = (" ".join(row))
+            print(toprint)
